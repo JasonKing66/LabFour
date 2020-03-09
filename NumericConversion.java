@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// an extra comment
+
 public class NumericConversion {
 
     // Method names and descriptions taken from Lab Assignment page.
