@@ -87,7 +87,7 @@ public class NumericConversion {
 
     public static void main(String[] args) {
         Scanner scnr = new Scanner(System.in);
-        int menuChoice = 1;
+        int menuNumber = 1;
         String stringToConvert;
 
         while (menuChoice != 4) {
@@ -102,7 +102,7 @@ public class NumericConversion {
             System.out.print("Please enter an option: ");
             menuChoice = scnr.nextInt();
 
-            if (menuChoice == 4) {
+            if (menuNumber == 4) {
                 System.out.println("Goodbye!");
                 break;
             }
@@ -110,7 +110,7 @@ public class NumericConversion {
             System.out.print("Please enter the numeric string to convert: ");
             stringToConvert = scnr.next();
 
-            if (menuChoice == 1) {
+            if (menuNumber == 1) {
                 if (stringToConvert.length() > 1) {
                     System.out.println("Result: " + hexStringDecode(stringToConvert));
                 }
@@ -120,7 +120,7 @@ public class NumericConversion {
                 }
             }
 
-            else if (menuChoice == 2) {
+            else if (menuNumber == 2) {
                 System.out.println("Result: " + binaryStringDecode(stringToConvert));
             }
 
